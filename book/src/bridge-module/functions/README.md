@@ -56,7 +56,9 @@ fn a_function (_some_arg: UniqueId, _an_arg: UniqueId, _cool_arg: u8) {
     // ...
 }
 
+#[swift_bridge::bridge]
 mod ffi {
+    #[swift_bridge(swift_repr = "struct")]
     struct FfiUniqueId(u64);
 
     extern "Rust" {
