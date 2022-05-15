@@ -90,7 +90,7 @@ typedef struct __private__OptionI64 { int64_t val; bool is_some; } __private__Op
 typedef struct __private__OptionUsize { uintptr_t val; bool is_some; } __private__OptionUsize;
 typedef struct __private__OptionIsize { intptr_t val; bool is_some; } __private__OptionIsize;
 typedef struct __private__OptionF32 { float val; bool is_some; } __private__OptionF32;
-typedef struct __private__OptionF64 { double val; bool is_some; } __private__OptionDouble;
+typedef struct __private__OptionF64 { double val; bool is_some; } __private__OptionF64;
 typedef struct __private__OptionBool { bool val; bool is_some; } __private__OptionBool;
 "#
     .to_string();
