@@ -59,8 +59,8 @@ fn core_swift() -> String {
         ("Int", "isize"),
         //
         ("Bool", "bool"),
-        ("Float", "float"),
-        ("Double", "double"),
+        ("Float", "f32"),
+        ("Double", "f64"),
     ] {
         core_swift += &conform_to_vectorizable(swift_ty, rust_ty);
     }
