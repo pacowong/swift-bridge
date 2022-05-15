@@ -107,6 +107,9 @@ typedef struct __private__OptionBool { bool val; bool is_some; } __private__Opti
         ("isize", "intptr_t"),
         //
         ("bool", "bool"),
+        //
+        ("f32", "float"),
+        ("f64", "double"),
     ] {
         header += &vec_of_primitive_headers(rust_ty, c_ty);
     }
